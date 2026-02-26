@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brasa Burguer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <header class="navbar">
+    <img src="./img/logo.png" class="logo">
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio">Início</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+  </header>
+  
+  <button id="abrirCarrinho" class="btn-abrir-carrinho">
+    🛒
+  </button>
+  
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>O melhor smash burger da região 🔥</h1>
+      <p>Sabor artesanal, suculento e feito na brasa.</p>
+      
+      <div class="hero-buttons">
+        <a href="#cardapio" class="btn primary">Ver Cardápio</a>
+      </div>
+    </div>
+    
+    <div class="hero-image">
+      <img src="../img/lancheSaboroso.png" alt="Hambúrguer artesanal">
+    </div>
+  </section>
+  
+  <section id="cardapio" class="cardapio">
+    <h2>Nosso Cardápio 🍔</h2>
+    
+    <div class="filtros">
+      <button class="filtro-btn active" data-categoria="todos">Todos</button>
+      <button class="filtro-btn" data-categoria="tradicional">Tradicionais</button>
+      <button class="filtro-btn" data-categoria="smash">Smash</button>
+      <button class="filtro-btn" data-categoria="combo">Combos</button>
+    </div>
+    
+    <div class="produtos-container">
+      <!-- Produtos serão renderizados aqui -->
+    </div>
+  </section>
+  
+  <section id="sobre" class="sobre">
+  <div class="sobre-container">
+
+    <div class="sobre-texto">
+      <h2>🔥 Sobre a Brasa Burger</h2>
+      <p>
+        Na <strong>Brasa Burger</strong>, a paixão pelo fogo e pela carne
+        se transforma em experiências inesquecíveis.
+      </p>
+
+      <p>
+        Nossos hambúrgueres são preparados na brasa,
+        com carnes selecionadas, ingredientes frescos
+        e aquele sabor defumado irresistível.
+      </p>
+
+      <p>
+        Mais do que um lanche, entregamos momentos.
+        Seja para reunir amigos, curtir a família
+        ou matar aquela fome insana 🍔🔥
+      </p>
+
+      <button class="btn-sobre">Ver Cardápio</button>
+    </div>
+
+    <div class="sobre-imagem">
+      <img src="./img/burguerDestaque.png" alt="Hambúrguer na brasa">
+    </div>
+
+  </div>
+</section>
+  
+  <aside class="carrinho">
+    
+    <div class="carrinho-topo">
+      <h3>🛒 Seu Pedido</h3>
+      <button id="fecharCarrinho" class="fechar-btn">✖</button>
+    </div>
+    
+    <div class="carrinho-itens"></div>
+    <p class="total">Total: R$ 0</p>
+    <br>
+    <a href="#" class="btn secondary" id="whatsappBtn">
+      Pedir no WhatsApp
+    </a>
+    
+  </aside>
+  
+  <section id="contato" class="contato">
+  
+  <h2>📞 Fale com a Brasa Burger</h2>
+  
+  <div class="contato-container">
+    
+    <div class="contato-info">
+      <p><strong>📍 Endereço:</strong> Rua das Brasas, 123 - Centro</p>
+      <p><strong>📱 WhatsApp:</strong>
+        <a href="https://wa.me/5599999999999" target="_blank">
+          (99) 99999-9999
+        </a>
+      </p>
+      <p><strong>⏰ Horário:</strong>
+        Terça a Domingo - 18h às 23h
+      </p>
+    </div>
+
+    <form class="contato-form">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Digite sua mensagem..." required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+    
+  </div>
+  
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-logo">
+      <h2>🔥 Brasa Burguer</h2>
+      <p>Sabor artesanal direto da brasa para você.</p>
+    </div>
+    
+    <div class="footer-links">
+      <h3>Navegação</h3>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-contato">
+      <h3>Contato</h3>
+      <p>📍 Imbituba - SC</p>
+      <p>📞 4899673270499</p>
+      <p>📲 Pedido pelo WhatsApp</p>
+    </div>
+    
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2026 Brasa Burguer | Desenvolvido por Djonata Alexandre Borba</p>
+  </div>
+</footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
